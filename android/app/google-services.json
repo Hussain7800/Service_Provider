@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476680617860",
+    "project_id": "service-provider-172f6",
+    "storage_bucket": "service-provider-172f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476680617860:android:a9edf319add12fa0fd67d1",
+        "android_client_info": {
+          "package_name": "com.example.designfyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAEkbDD__5F438IUlMo7JqXqEBZM4c57c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,12 +1,14 @@
-import 'package:designfyp/signup.dart';
+
+import 'package:designfyp/Provider/ProviderRegisterationProcess/provider_Signup.dart';
+import 'package:designfyp/RegisterationProcess/signup.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ProviderApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ProviderApp extends StatelessWidget {
+  const ProviderApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -144,6 +146,10 @@ class MyApp extends StatelessWidget {
                   child: ElevatedButton.icon(
                     onPressed: () {
                       // Handle the button click
+                        Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ProviderSignUp()),
+    );
                     },
                     icon: Padding(
                       padding: const EdgeInsets.only(top: 10),

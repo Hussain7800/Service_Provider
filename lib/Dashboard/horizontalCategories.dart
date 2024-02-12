@@ -14,7 +14,7 @@ class HorizontallyScrollableContainer extends StatelessWidget {
         child: Row(
           children:[
        
-                 CategoriesBox(), 
+                // CategoriesBox(), 
             
           ]
         ),

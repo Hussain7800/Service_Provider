@@ -1,10 +1,9 @@
-import 'package:designfyp/CategoriesPage/AllCategoriespage1.dart';
-import 'package:designfyp/Dashboard/DashboardshowCatgories.dart';
-import 'package:designfyp/Dashboard/horizontalCategories.dart';
+
+import 'package:designfyp/Provider/P_Dashboard/DashboardshowCatgories.dart';
 import 'package:flutter/material.dart';
 
 
-class ShowPopularCategories extends StatelessWidget {
+class ShowPopularProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
       return Container(
@@ -14,7 +13,7 @@ class ShowPopularCategories extends StatelessWidget {
         children: [
           // Title Text
           Text(
-            'Popular Categories',
+            'New Providers',
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -37,10 +36,10 @@ class ShowPopularCategories extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {
                       // Handle the "View All" button click
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => AllCategoryScreen()),
-                      );
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => AllCategoryScreen()),
+                      // );
                     },
                     child: Text(
                       'View All',
@@ -57,8 +56,7 @@ class ShowPopularCategories extends StatelessWidget {
           SizedBox(
             height: 5,
           ),
-       // HorizontallyScrollableContainer(),
-       CategoriesBox(),
+        ProviderCategoriesBox(),
         ],
       ),
     );

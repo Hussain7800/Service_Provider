@@ -1,5 +1,4 @@
-import 'package:designfyp/Dashboard/dashboard.dart';
-import 'package:designfyp/TextServiceProvider.dart';
+import 'package:designfyp/RegisterationProcess/TextServiceProvider.dart';
 import 'package:flutter/material.dart';
 
 void main() {

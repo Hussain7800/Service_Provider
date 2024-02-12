@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CategoriesBox extends StatelessWidget {
+class ProviderCategoriesBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -14,8 +14,8 @@ class CategoriesBox extends StatelessWidget {
         ),
         SizedBox(width: 16), // Adjust the spacing between boxes
         CategoriesBoxItem(
-          imagePath: 'assets/gardener.png',
-          title: 'Gardening services',
+          imagePath: 'assets/cleaner.png',
+          title: 'Home Cleaning 2',
           subTitle: 'Cleaner 2',
           yOffset: -45,
           alignment: CrossAxisAlignment.end,
@@ -72,7 +72,7 @@ class CategoriesBoxItem extends StatelessWidget {
       offset: Offset(11, -39),
       child: Container(
         height: 194,
-        width: 143,
+        width: 103,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(31),
           color: Colors.white,

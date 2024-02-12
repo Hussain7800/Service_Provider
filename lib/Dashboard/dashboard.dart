@@ -4,6 +4,7 @@ import 'package:designfyp/Notification/Notification.dart';
 import 'package:designfyp/customiconplus.dart';
 import 'package:designfyp/searchbutton.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class MyDashboard extends StatefulWidget {
@@ -12,6 +13,13 @@ class MyDashboard extends StatefulWidget {
 }
 
 class _MyDashboardState extends State<MyDashboard> {
+    final Uri _url = Uri.parse(
+      'https://mediafiles.botpress.cloud/97d8f310-5991-4eb3-9125-bdffd5d65332/webchat/bot.html');
+  Future<void> _launchUrl() async {
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
+  }
   int _selectedIndex = 0;
 
   @override
@@ -59,7 +67,10 @@ class _MyDashboardState extends State<MyDashboard> {
                   // Chat Image
                   GestureDetector(
                     onTap: () {
-                      _onItemTapped(1);
+                       launchUrl(_url);
+                            //  _launchMessageUrl(); // Launch the URL when the "Message" button is clicked
+
+                             _onItemTapped(1);
                     },
                     child: Image.asset(
                       'assets/message.png', // Replace with your image asset path

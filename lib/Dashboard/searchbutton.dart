@@ -1,5 +1,6 @@
+import 'package:designfyp/Dashboard/offers.dart';
 import 'package:flutter/material.dart';
-import 'package:designfyp/offers.dart'; // Import the file containing MyOffers widget
+// Import the file containing MyOffers widget
 
 class SearchButton extends StatelessWidget {
   @override
